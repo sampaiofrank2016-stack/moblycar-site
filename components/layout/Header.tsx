@@ -1,10 +1,17 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#09090B]/90 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <a href="/" className="text-2xl font-extrabold tracking-tight">
-          <span className="text-white">Mobly</span>
-          <span className="text-green-500">Car</span>
+        <a href="/" className="flex items-center">
+          <Image
+            src="/logo-moblycar.png"
+            alt="MoblyCar"
+            width={190}
+            height={55}
+            priority
+          />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
