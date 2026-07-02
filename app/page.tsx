@@ -6,6 +6,7 @@ import Drivers from "@/components/sections/Drivers";
 import WhyMoblyCar from "@/components/sections/WhyMoblyCar";
 import Companies from "@/components/sections/Companies";
 import MapPresence from "@/components/sections/MapPresence";
+import Security from "@/components/sections/Security";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyMoblyCar />
       <Companies />
       <MapPresence />
+      <Security />
     </>
   );
 }
