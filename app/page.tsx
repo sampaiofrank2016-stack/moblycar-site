@@ -5,6 +5,7 @@ import Passengers from "@/components/sections/Passengers";
 import Drivers from "@/components/sections/Drivers";
 import WhyMoblyCar from "@/components/sections/WhyMoblyCar";
 import Companies from "@/components/sections/Companies";
+import MapPresence from "@/components/sections/MapPresence";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Drivers />
       <WhyMoblyCar />
       <Companies />
+      <MapPresence />
     </>
   );
 }
