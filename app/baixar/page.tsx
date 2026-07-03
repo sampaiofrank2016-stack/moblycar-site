@@ -31,7 +31,9 @@ export default function DownloadPage() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=br.com.devbase.moblycar"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur transition hover:-translate-y-2 hover:border-green-400/40 hover:bg-white/10"
             >
               <Smartphone className="mb-6 h-11 w-11 text-green-400" />
@@ -46,14 +48,20 @@ export default function DownloadPage() {
                 Baixe o app de passageiros e aproveite corridas com praticidade.
               </p>
 
-              <div className="mt-7 flex items-center gap-2 font-semibold text-green-400">
-                Abrir Google Play
-                <ArrowRight size={20} className="transition group-hover:translate-x-1" />
+              <div className="mt-7 inline-flex items-center gap-3 rounded-2xl bg-black px-5 py-3 font-semibold text-white transition group-hover:bg-green-600">
+                <Smartphone size={20} />
+                Google Play
+                <ArrowRight
+                  size={18}
+                  className="transition group-hover:translate-x-1"
+                />
               </div>
             </a>
 
             <a
-              href="#"
+              href="https://apps.apple.com/br/app/moblycar/id6742899221"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur transition hover:-translate-y-2 hover:border-green-400/40 hover:bg-white/10"
             >
               <Apple className="mb-6 h-11 w-11 text-green-400" />
@@ -68,14 +76,20 @@ export default function DownloadPage() {
                 Acesse a versão para iOS e solicite suas corridas com segurança.
               </p>
 
-              <div className="mt-7 flex items-center gap-2 font-semibold text-green-400">
-                Abrir App Store
-                <ArrowRight size={20} className="transition group-hover:translate-x-1" />
+              <div className="mt-7 inline-flex items-center gap-3 rounded-2xl bg-black px-5 py-3 font-semibold text-white transition group-hover:bg-green-600">
+                <Apple size={20} />
+                App Store
+                <ArrowRight
+                  size={18}
+                  className="transition group-hover:translate-x-1"
+                />
               </div>
             </a>
 
             <a
-              href="#"
+              href="https://play.google.com/store/apps/details?id=br.com.devbase.moblycar.prestador"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group rounded-[32px] border border-green-400/30 bg-green-500/10 p-8 backdrop-blur transition hover:-translate-y-2 hover:border-green-400 hover:bg-green-500/15"
             >
               <Car className="mb-6 h-11 w-11 text-green-400" />
@@ -90,9 +104,13 @@ export default function DownloadPage() {
                 Acesse o aplicativo de motoristas e comece a receber corridas.
               </p>
 
-              <div className="mt-7 flex items-center gap-2 font-semibold text-green-400">
+              <div className="mt-7 inline-flex items-center gap-3 rounded-2xl bg-black px-5 py-3 font-semibold text-white transition group-hover:bg-green-600">
+                <Car size={20} />
                 Quero dirigir
-                <ArrowRight size={20} className="transition group-hover:translate-x-1" />
+                <ArrowRight
+                  size={18}
+                  className="transition group-hover:translate-x-1"
+                />
               </div>
             </a>
           </div>
