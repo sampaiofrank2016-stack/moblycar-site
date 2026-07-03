@@ -2,7 +2,7 @@ import { Building2, Clock3, ShieldCheck } from "lucide-react";
 
 export default function Companies() {
   return (
-    <section className="bg-[#F8FAFC] py-28">
+    <section id="empresas" className="bg-[#F8FAFC] py-28">
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="mx-auto mb-20 max-w-3xl text-center">

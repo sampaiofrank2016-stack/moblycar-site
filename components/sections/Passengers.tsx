@@ -1,6 +1,6 @@
 export default function Passengers() {
   return (
-    <section className="bg-[#F8FAFC] py-28">
+    <section id="passageiros" className="bg-[#F8FAFC] py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
         <div>

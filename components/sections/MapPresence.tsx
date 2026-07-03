@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react";
 
 export default function MapPresence() {
   return (
-    <section className="bg-white py-28">
+    <section id="expansao" className="bg-white py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
         <div>
           <p className="mb-4 font-semibold uppercase tracking-[0.3em] text-green-600">

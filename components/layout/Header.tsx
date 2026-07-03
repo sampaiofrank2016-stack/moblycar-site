@@ -16,23 +16,38 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a href="#" className="text-sm font-medium text-gray-300 transition hover:text-green-400">
+          <a
+            href="#passageiros"
+            className="text-sm font-medium text-gray-300 transition hover:text-green-400"
+          >
             Passageiros
           </a>
 
-          <a href="#" className="text-sm font-medium text-gray-300 transition hover:text-green-400">
+          <a
+            href="#motoristas"
+            className="text-sm font-medium text-gray-300 transition hover:text-green-400"
+          >
             Motoristas
           </a>
 
-          <a href="#" className="text-sm font-medium text-gray-300 transition hover:text-green-400">
+          <a
+            href="#empresas"
+            className="text-sm font-medium text-gray-300 transition hover:text-green-400"
+          >
             Empresas
           </a>
 
-          <a href="#" className="text-sm font-medium text-gray-300 transition hover:text-green-400">
+          <a
+            href="#expansao"
+            className="text-sm font-medium text-gray-300 transition hover:text-green-400"
+          >
             Expansão
           </a>
 
-          <a href="#" className="text-sm font-medium text-gray-300 transition hover:text-green-400">
+          <a
+            href="#"
+            className="text-sm font-medium text-gray-300 transition hover:text-green-400"
+          >
             Blog
           </a>
 

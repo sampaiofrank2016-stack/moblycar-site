@@ -2,7 +2,7 @@ import { BadgeDollarSign, Clock3, ShieldCheck, ArrowRight } from "lucide-react";
 
 export default function Drivers() {
   return (
-    <section className="bg-white py-28">
+    <section id="motoristas" className="bg-white py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
 
         {/* Cards */}
