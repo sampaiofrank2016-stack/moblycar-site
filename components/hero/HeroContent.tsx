@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroContent() {
   return (
     <div>
@@ -22,19 +24,19 @@ export default function HeroContent() {
       </p>
 
       <div className="mt-8 flex gap-4">
-        <a
+        <Link
           href="/baixar"
           className="rounded-full bg-green-600 px-8 py-4 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-green-500"
         >
           Baixar Aplicativo
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/baixar"
           className="rounded-full border border-white/20 px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-black"
         >
           Seja Motorista
-        </a>
+        </Link>
       </div>
     </div>
   );
