@@ -1,7 +1,7 @@
 export default function Stats() {
   const stats = [
     {
-      number: "+40",
+      number: "+100",
       title: "Motoristas",
       subtitle: "parceiros",
     },
@@ -11,7 +11,7 @@ export default function Stats() {
       subtitle: "em operação",
     },
     {
-      number: "10 mil+",
+      number: "20 mil+",
       title: "Corridas",
       subtitle: "realizadas",
     },
