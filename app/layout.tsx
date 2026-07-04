@@ -83,6 +83,52 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TaxiService",
+
+  name: "MoblyCar",
+
+  url: "https://moblycar.com.br",
+
+  logo: "https://moblycar.com.br/logo.png",
+
+  image: "https://moblycar.com.br/og-image.jpg",
+
+  description:
+    "Aplicativo brasileiro de mobilidade urbana conectando passageiros e motoristas com tecnologia, economia e segurança.",
+
+  telephone: "+55 64 99319-8868",
+
+  email: "mobcariub@gmail.com",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Itumbiara",
+    addressRegion: "GO",
+    addressCountry: "BR",
+  },
+
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Itumbiara",
+    },
+    {
+      "@type": "City",
+      name: "Araporã",
+    },
+    {
+      "@type": "City",
+      name: "Campina Verde",
+    },
+  ],
+
+  sameAs: [
+    "https://instagram.com/moblycar",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -93,6 +139,15 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
+      </head>
+
       <body className="min-h-full flex flex-col">
         {children}
       </body>
