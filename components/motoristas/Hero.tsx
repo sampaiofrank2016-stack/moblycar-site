@@ -34,12 +34,13 @@ export default function Hero() {
 
           <div className="mt-12 flex flex-wrap gap-5">
 
-            <Link
-              href="/baixar"
-              className="rounded-full bg-green-600 px-10 py-4 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-green-500"
+            <a
+              href="https://play.google.com/store/apps/details?id=br.com.devbase.moblycar.prestador"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Baixar App Motorista
-            </Link>
+            </a>
 
             <Link
               href="/"

@@ -27,13 +27,15 @@ export default function CTA() {
 
           <div className="mt-10 flex flex-wrap gap-4">
 
-            <Link
-              href="/baixar"
+            <a
+              href="https://play.google.com/store/apps/details?id=br.com.devbase.moblycar.prestador"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-green-600 px-10 py-4 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-green-500"
             >
               Baixar App Motorista
-            </Link>
-
+            </a>
+                        
             <a
               href="https://wa.me/5564993198868"
               target="_blank"
