@@ -4,16 +4,13 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#09090B] via-[#111827] to-[#0F172A] py-24">
-
       {/* Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,197,94,0.12),transparent_35%)]" />
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
         {/* Texto */}
-
         <div>
-
           <span className="inline-flex rounded-full border border-green-500/30 bg-green-500/10 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-green-400">
             MOTORISTAS PARCEIROS
           </span>
@@ -27,9 +24,9 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-xl text-xl leading-9 text-gray-300">
-            Faça parte de uma plataforma regional que valoriza seus
-            motoristas, oferece suporte próximo e cria oportunidades reais
-            para aumentar sua renda.
+            Faça parte de uma plataforma regional que valoriza seus motoristas,
+            oferece suporte próximo e cria oportunidades reais para aumentar sua
+            renda.
           </p>
 
           <div className="mt-12 flex flex-wrap gap-5">
@@ -38,6 +35,7 @@ export default function Hero() {
               href="https://play.google.com/store/apps/details?id=br.com.devbase.moblycar.prestador"
               target="_blank"
               rel="noopener noreferrer"
+              className="rounded-full bg-green-600 px-10 py-4 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-green-500"
             >
               Baixar App Motorista
             </a>
@@ -50,19 +48,15 @@ export default function Hero() {
             </Link>
 
           </div>
-
         </div>
 
         {/* Imagem */}
-
         <div className="relative flex justify-center">
 
           {/* Glow */}
-
           <div className="absolute h-[420px] w-[420px] rounded-full bg-green-500/20 blur-[120px]" />
 
           <div className="relative">
-
             <Image
               src="/motorista-hero.png"
               alt="Motorista parceiro MoblyCar"
@@ -71,13 +65,11 @@ export default function Hero() {
               priority
               className="relative z-10"
             />
-
           </div>
 
         </div>
 
       </div>
-
     </section>
   );
 }
