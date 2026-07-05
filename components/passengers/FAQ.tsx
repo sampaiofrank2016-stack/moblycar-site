@@ -22,7 +22,7 @@ const questions = [
   {
     question: "Posso pagar pelo aplicativo?",
     answer:
-      "As formas de pagamento disponíveis podem variar conforme a cidade e são apresentadas durante a solicitação da corrida.",
+      "Sim! As formas de pagamento disponíveis são apresentadas durante a solicitação da corrida.",
   },
   {
     question: "Quem são os motoristas?",

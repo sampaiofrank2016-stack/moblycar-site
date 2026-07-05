@@ -92,7 +92,7 @@ export default function CTA() {
           <div className="absolute h-[380px] w-[380px] rounded-full bg-green-500/20 blur-[100px]" />
 
           <Image
-            src="/passageira-hero.png"
+            src="/embarque-hero.png"
             alt="Passageira MoblyCar"
             width={500}
             height={580}
