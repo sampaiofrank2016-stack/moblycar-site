@@ -48,10 +48,12 @@ export default function Header() {
             Sobre
           </Link>
 
-          {/* Blog ainda será desenvolvido */}
-          <span className="cursor-default text-sm font-medium text-gray-500">
+          <Link
+            href="/blog"
+            className="cursor-default text-sm font-medium text-gray-500"
+          >
             Blog
-          </span>
+          </Link>"
 
           <Link
             href="/baixar"
