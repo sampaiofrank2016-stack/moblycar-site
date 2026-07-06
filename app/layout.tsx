@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -73,8 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MoblyCar",
-    description:
-      "Aplicativo brasileiro de mobilidade urbana.",
+    description: "Aplicativo brasileiro de mobilidade urbana.",
     images: ["/og-image.jpg"],
   },
 
@@ -148,8 +151,16 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="min-h-full flex flex-col">
-        {children}
+      <body className="min-h-screen flex flex-col">
+
+        <Header />
+
+        <main className="flex-1">
+          {children}
+        </main>
+
+        <Footer />
+
       </body>
     </html>
   );
