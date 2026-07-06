@@ -4,21 +4,20 @@ const partners = [
   {
     name: "New Life Clínicas",
     logo: "/partners/newlife.png",
+    theme: "light",
   },
   {
     name: "Silver Indústria e Comércio de Metais",
     logo: "/partners/silver.png",
+    theme: "dark",
   },
 ];
 
 export default function Partners() {
   return (
     <section className="bg-white py-24">
-
       <div className="mx-auto max-w-7xl px-6">
-
         <div className="mb-16 text-center">
-
           <span className="text-sm font-semibold uppercase tracking-[0.3em] text-green-500">
             EMPRESAS PARCEIRAS
           </span>
@@ -31,34 +30,33 @@ export default function Partners() {
             Empresas da região já utilizam a MoblyCar para facilitar o
             deslocamento de colaboradores, clientes e parceiros.
           </p>
-
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
+          {partners.map((partner) => {
+            const isLight = partner.theme === "light";
 
-          {partners.map((partner) => (
-
-            <div
-              key={partner.name}
-              className="group flex h-48 items-center justify-center rounded-3xl border border-white/10 bg-[#111827] p-8 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-2xl"
-            >
-
-              <div className="flex h-32 w-full items-center justify-center rounded-2xl bg-white p-6 shadow-lg transition duration-300 group-hover:scale-[1.02]">
-
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  width={240}
-                  height={120}
-                  className="max-h-20 w-auto object-contain"
-                />
-
+            return (
+              <div
+                key={partner.name}
+                className="group flex h-48 items-center justify-center rounded-3xl border border-white/10 bg-[#111827] p-8 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-2xl"
+              >
+                <div
+                  className={`flex h-32 w-full items-center justify-center rounded-2xl p-6 transition duration-300 group-hover:scale-[1.02] ${
+                    isLight ? "bg-white" : "bg-[#0B0F19]"
+                  }`}
+                >
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={260}
+                    height={120}
+                    className="max-h-20 w-auto object-contain"
+                  />
+                </div>
               </div>
-
-            </div>
-
-          ))}
-
+            );
+          })}
         </div>
 
         <p className="mx-auto mt-14 max-w-3xl text-center text-lg leading-8 text-slate-500">
@@ -66,9 +64,7 @@ export default function Partners() {
           mobilidade mais próxima, eficiente e preparada para crescer junto
           com cada cidade.
         </p>
-
       </div>
-
     </section>
   );
 }

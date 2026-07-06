@@ -64,7 +64,7 @@ export default function CTA() {
           <div className="absolute h-[380px] w-[380px] rounded-full bg-green-500/20 blur-[100px]" />
 
           <Image
-            src="/empresas-hero.png"
+            src="/acordo-hero.png"
             alt="Mobilidade corporativa"
             width={520}
             height={600}
