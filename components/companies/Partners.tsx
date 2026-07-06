@@ -40,16 +40,20 @@ export default function Partners() {
 
             <div
               key={partner.name}
-              className="group flex h-48 items-center justify-center rounded-3xl border border-white/10 bg-[#111827] p-10 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-2xl"
+              className="group flex h-48 items-center justify-center rounded-3xl border border-white/10 bg-[#111827] p-8 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-2xl"
             >
 
-              <Image
-                src={partner.logo}
-                alt={partner.name}
-                width={240}
-                height={120}
-                className="max-h-20 w-auto object-contain transition duration-500 group-hover:scale-105"
-              />
+              <div className="flex h-32 w-full items-center justify-center rounded-2xl bg-white p-6 shadow-lg transition duration-300 group-hover:scale-[1.02]">
+
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={240}
+                  height={120}
+                  className="max-h-20 w-auto object-contain"
+                />
+
+              </div>
 
             </div>
 

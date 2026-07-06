@@ -5,6 +5,7 @@ import Plans from "@/components/companies/Plans";
 import Comparison from "@/components/companies/Comparison";
 import Partners from "@/components/companies/Partners";
 import HowPartnershipWorks from "@/components/companies/HowPartnershipWorks";
+import CTA from "@/components/companies/CTA";
 
 export default function EmpresasPage() {
   return (
@@ -16,6 +17,7 @@ export default function EmpresasPage() {
       <Comparison />
       <Partners />
       <HowPartnershipWorks />
+      <CTA />
     </>
   );
 }
