@@ -1,6 +1,3 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-
 import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Passengers from "@/components/sections/Passengers";
@@ -15,8 +12,6 @@ import DownloadCTA from "@/components/sections/DownloadCTA";
 export default function Home() {
   return (
     <>
-      <Header />
-
       <Hero />
 
       <HowItWorks />
@@ -36,8 +31,6 @@ export default function Home() {
       <Security />
 
       <DownloadCTA />
-
-      <Footer />
     </>
   );
 }
