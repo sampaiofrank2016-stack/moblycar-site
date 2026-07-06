@@ -50,7 +50,7 @@ export default function Header() {
 
           <Link
             href="/blog"
-            className="cursor-default text-sm font-medium text-gray-500"
+            className="text-sm font-medium text-gray-300 transition hover:text-green-400"
           >
             Blog
           </Link>"
