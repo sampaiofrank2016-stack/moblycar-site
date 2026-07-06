@@ -2,7 +2,9 @@ import Hero from "@/components/companies/Hero";
 import Solutions from "@/components/companies/Solutions";
 import WhyCompanies from "@/components/companies/WhyCompanies";
 import Plans from "@/components/companies/Plans";
+import Comparison from "@/components/companies/Comparison";
 import Partners from "@/components/companies/Partners";
+import HowPartnershipWorks from "@/components/companies/HowPartnershipWorks";
 
 export default function EmpresasPage() {
   return (
@@ -11,7 +13,9 @@ export default function EmpresasPage() {
       <Solutions />
       <WhyCompanies />
       <Plans />
+      <Comparison />
       <Partners />
+      <HowPartnershipWorks />
     </>
   );
 }

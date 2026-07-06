@@ -40,7 +40,7 @@ export default function Partners() {
 
             <div
               key={partner.name}
-              className="group flex h-48 items-center justify-center rounded-3xl border border-slate-200 bg-white p-10 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-xl"
+              className="group flex h-48 items-center justify-center rounded-3xl border border-white/10 bg-[#111827] p-10 transition duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-2xl"
             >
 
               <Image
@@ -48,7 +48,7 @@ export default function Partners() {
                 alt={partner.name}
                 width={240}
                 height={120}
-                className="max-h-20 w-auto object-contain grayscale transition duration-500 group-hover:grayscale-0"
+                className="max-h-20 w-auto object-contain transition duration-500 group-hover:scale-105"
               />
 
             </div>
